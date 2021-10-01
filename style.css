@@ -6,26 +6,57 @@
 }
 
 h1.mainPageIntro {
+    text-align: center;
     color: #FF3366;
-    font-size: 300%;
+    font-size: calc(1.25rem + 2.5vw);
 }
 
 h2.mainPageIntro {
+    text-align: center;
     color: #020100;
-    font-size: 200%;
+    font-size: calc(1gitrem + 1.75vw);
 }
-/* Pour la version PC/
-#carouselIndex{
+
+/* Pour la version PC */
+#carouselPC{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width:100%;
 }
-*/
-.carousel-item {
+
+.carousel-itemPC{
+    max-width: 30vw;
+    max-height: 30vw;
+}
+
+.carousel-itemPC img{
+    width: 100%;
+}
+
+@media screen and (min-width: 481px) {
+    #carouselSlider {
+        display: none;
+    }
+}
+
+/* Pour la version PC et le carousel*/
+.carousel-item, .carousel-itemPC {
     border-radius: 15px;
-    height: 200px;
-    width: 200px;
+    height: 100vw;
+    width: 100%;
     box-shadow: 2px 6px 2px 1px rgba(0, 0, 0, .2);
     margin-bottom: 10px;
+}
+
+/* Pour le carousel */
+.carousel-inner {
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width: 480px) {
+    #carouselPC {
+        display: none;
+    }
 }
