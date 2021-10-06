@@ -1,0 +1,71 @@
+/* Mobile Astuces - Astuces pages */
+
+main {
+    background-color: rgb(228, 228, 228);
+    padding-top: 0.5em;
+}
+
+main h1 {
+    font-family: 'Lato';
+    font-size : 1.3em;
+    padding : 2em;
+    text-align: center;
+}
+
+section.astuces {
+    padding: 1em;
+    font-family: 'Lato';    
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+section.astuces>article {
+    padding: 1em;
+    margin: .5em;
+    margin-bottom: 1.5em;
+    border:1px solid #FFFFFF;
+    border-radius: .3em;
+    background-color: #FFFFFF ;
+    box-shadow: 0.7px 1.3px 1.3px 1.3px rgb(170, 167, 167);
+}
+
+section h2 {
+    font-family: 'Lato';
+    font-size: 1.1em ;
+    font-weight: bold;
+    color: #020100;
+    padding-top: 0.5em;
+}
+
+#images-astuces{
+    border: 1px solid rgb(228, 228, 228);
+    margin: 1.5em;
+    border-radius: .3em;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0.7px 1.3px 1.3px 1.3px rgb(170, 167, 167);
+    height:10em;
+}
+
+img{
+    padding : 2.3em;
+}
+
+article p {
+    font-family: 'Lato';
+    font-size: 1em;
+    text-align: justify;
+    padding: 2.2em;
+    line-height: 130%;
+}
+
+@media screen and (min-width: 530px){
+    section.astuces {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.astuces>article{
+        width: 25%;
+}
