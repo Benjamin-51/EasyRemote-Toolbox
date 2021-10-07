@@ -39,7 +39,6 @@ section h2 {
 }
 
 .images-astuces{
-    border: 1px solid rgb(228, 228, 228);
     margin: 1.5em;
     border-radius: .3em;
     background-color: rgb(228, 228, 228);
@@ -67,5 +66,36 @@ article p {
 
     section.astuces>article{
         width: 25%;
+    }
+}
+
+@media print {
+    
+    main {
+        background-color: none;
+    }
+    
+    section.astuces {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.astuces>article{
+        width: 80%;
+        box-shadow: none;
+        background-color: unset;
+    }
+
+    .images-astuces{
+        box-shadow: none;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+/*retire tout ce qui n'est pas dans le body*/
+    body > *:not(main) {
+        display: none;
     }
 }
