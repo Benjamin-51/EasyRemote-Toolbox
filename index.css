@@ -1,63 +1,94 @@
-@media screen and (min-width: 531px) {
-    #carousel {
+.header-bg{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-home-bg.png);
+}
+
+footer{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-home-bg.png);
+}
+
+main {
+    position:relative;
+    width: auto;
+    height: 500px;
+    z-index: -3;
+}
+
+.cards {
+    display: none;
+}
+
+.carousel-inner .active,
+.carousel-inner .active+.carousel-item,
+.carousel-inner .active+.carousel-item+.carousel-item {
+    display: block;
+}
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+    -webkit-transition: none;
+    transition: none;
+}
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+/* left or forward direction */
+.active.carousel-item-left+.carousel-item-next.carousel-item-left,
+.carousel-item-next.carousel-item-left+.carousel-item,
+.carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+.carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+/* farthest right hidden item must be abso position for animations */
+.carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+/* right or prev direction */
+.active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+.carousel-item-prev.carousel-item-right+.carousel-item,
+.carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+.carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+}
+
+
+@media screen and (min-width: 530px){
+    .header-bg{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/home-bg.png);
+    }
+    
+    footer{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/home-bg.png);
+    }
+
+    .container-fluid {
         display: none;
     }
 
-    #carouselDesktop{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width:100%;
+    .cards{
+        display: unset;
     }
-
-    .carousel-itemPC img{
-        width: 100%;
-    }
-
-    .carousel-itemPC {
-        max-width: calc(100px + 20vw);
-    }
-
-    h4 {
-        font-size: calc(0.5rem + 1.75vw);
-    }
-}
-
-@media screen and (max-width: 530px){
-    #carouselDesktop {
-        display: none;
-    }
-}   
-
-#home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F1F1F1;
-    height:80vh;
-}
-
-h2.mainPageIntro {
-    text-align: center;
-    color: #FF3366;
-    font-size: calc(1.25rem + 2.5vw);
-}
-
-h3.mainPageIntro {
-    text-align: center;
-    color: #020100;
-    font-size: calc(1rem + 1.75vw);
-}
-
-
-.carousel-item, .carousel-itemPC {
-    border-radius: 15px;
-    width: 100%;
-    box-shadow: 2px 6px 20px 1px rgba(0, 0, 0, .2);
-    margin-bottom: 10px;
-}
-
-.carousel-inner {
-    padding: 1em;
-    /*border-radius: 15px;*/
 }
