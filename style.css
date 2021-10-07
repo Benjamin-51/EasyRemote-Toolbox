@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     border: none;
+    font-family: 'Lato', 'Segoe UI', sans-serif;
 }
 
 /* Mobile Header */
@@ -9,7 +10,6 @@
 header {
     width: auto;
     height: 450px;
-    font-family: 'Lato', 'Segoe UI', sans-serif;
     background-color: #1B1B1B;
 }
 
@@ -22,26 +22,26 @@ header {
 nav{
     display: flex;
     justify-content: space-between;
-    height: 120px;
+    height: 100px;
     align-items: center;
-    padding: 80px 25px 0px 50px;
+    padding: 80px 25px 0px 30px;
 }
 
 .logo {
     width: 120px;
     color: #FFC700;
     text-align: center;
-    font-size: 3.5vmin;
+    font-size: 15px;
 }
 
 .logo img{
-    width: 15vmin;
+    width: 75px;
 }
 
 .menu-metre {
     position: fixed;
     right: 25px;
-    top: 50px;
+    top: 100px;
     width: 65px;
     height: 260px;
     border-radius: 5px;
@@ -193,24 +193,24 @@ nav{
 
 .header-content {
     width: auto;
-    height: 45vh;
+    height: 270px;
     text-align: center;
     color: white;
     display: flex;
     flex-flow: column;
     justify-content:flex-start;
-    padding: 30px 0;
+    padding: 20px 15px;
 }
 
 .header-content h1 {
-    font-size: 6vmax;
-    margin: 5% 15px;
+    font-size: 30px;
+    margin: 20px 0;
 }
 
 .header-content p {
     margin: 20px 15px;
     color: rgb(194, 194, 194);
-    font-size: 3vmax;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -303,6 +303,7 @@ footer a {
 
     nav{
         height: 120px;
+        padding: 80px 25px 0px 60px;
     }
 
     .logo{
@@ -313,7 +314,7 @@ footer a {
     }
 
     .logo img{
-        width: 10vmin;
+        width: 75px;
     }
 
     .menu-metre {
@@ -335,13 +336,13 @@ footer a {
         width: auto;
         height: 430px;
         margin: 0 auto;  
-        padding: 0;
+        padding: 0 30px;
     }
 
-
     .header-content h1 {
-        font-size: 8vmin;
-        margin: 100px 100px 50px 100px ;
+        max-width: 700px;
+        font-size: 60px;
+        margin: 30px auto 50px auto ;
     }
     
     .header-content p {

@@ -9,71 +9,102 @@ footer{
 main {
     position:relative;
     width: auto;
-    height: 500px;
+    height: 1300px;
     z-index: -3;
+    text-align: center;
+    background: #F1F1F1;
 }
 
-.cards {
-    display: none;
+section {
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start ;
+    background: #F1F1F1;
 }
 
-.carousel-inner .active,
-.carousel-inner .active+.carousel-item,
-.carousel-inner .active+.carousel-item+.carousel-item {
-    display: block;
-}
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
-    -webkit-transition: none;
-    transition: none;
-}
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    position: relative;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-.carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-    position: absolute;
-    top: 0;
-    right: -33.3333%;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-}
-/* left or forward direction */
-.active.carousel-item-left+.carousel-item-next.carousel-item-left,
-.carousel-item-next.carousel-item-left+.carousel-item,
-.carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
-.carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
-    position: relative;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-}
-/* farthest right hidden item must be abso position for animations */
-.carousel-inner .carousel-item-prev.carousel-item-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-}
-/* right or prev direction */
-.active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-.carousel-item-prev.carousel-item-right+.carousel-item,
-.carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
-.carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
-    position: relative;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-    display: block;
-    visibility: visible;
+h2 {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 30px 20px 0px 20px;
+    font-size: 20px;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px 0 20px;
+}
+
+.card{
+    max-width: 250px;
+    min-height: 350px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+.card-content{
+    padding: 30px 20px;
+}
+
+.card-image-container {
+    width: 150px;
+    height: 100px;
+    background: #F5F5F5;
+    margin: 30px auto 20px auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.card-image {
+    height: 80px;
+    width: 100px;
+}
+
+#outils-logo {
+    background: url(./ressources/outils-logo.png);
+    background-size: cover;
+}
+
+#astuces-logo {
+    background: url(./ressources/astuces-logo.png);
+    background-size: cover;
+    padding: 10px 0;
+}
+
+#netiquette-logo {
+    background: url(./ressources/netiquette-logo.png);
+    background-size: cover;
+    padding: 10px 0;
+}
+
+.card-text {
+    max-width: 200px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    background: #FFC700;
+    font-weight: 900;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #6e5600;
+}
 
 @media screen and (min-width: 530px){
     .header-bg{
@@ -84,11 +115,32 @@ main {
         background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/home-bg.png);
     }
 
-    .container-fluid {
-        display: none;
+    main {
+        max-height: 600px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
 
-    .cards{
-        display: unset;
+    h2 {
+        max-width: 500px;
+        padding: 50px 50px 40px 50px;
+        font-size: 30px;
     }
+
+    section {
+        display: flex;
+        flex-flow: row;
+        justify-content:center ;
+        margin: 0 25px;
+        margin-bottom: 100px;
+        height: 500px;
+    }
+
+    .container{
+        padding: 10px 10px;
+        margin: 0 10px;
+
+    }
+
 }
