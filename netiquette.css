@@ -1,0 +1,147 @@
+/* CSS NETIQUETTE */
+
+/*NETIQUETTE VERSION MOBILE FIRST*/
+
+/* Suppression affichage version desktop, version mobile affichée par défaut */
+
+#netiquette-desktop{
+    display:none;
+}
+
+/* Reste du CSS */
+
+.carousel-inner{
+    background-color:#C4C4C4;
+    padding: 1em;
+}
+.carousel-item {
+    background-color: white;
+    border-radius: 1em;
+    min-height: 600px;
+}
+.netiquette_img {
+    border-radius:3em;
+    padding: 0 3em;
+    width: 100%;
+    max-height: auto;
+}
+.netiquette_h2 {
+    color:#FF3366;
+    text-align:center;
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+.netiquette_caption {
+    text-align:center;
+    color: #202020;
+    font-size: 0.7em;
+    padding-top: 0.5em;
+    color:crimson;
+}
+.netiquette_paragraphe {
+    text-align: justify;
+    padding: 0 3em;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon  {
+    background-color: #FF3366;
+}
+
+
+
+/* ********************* MEDIA QUERIES *************************/
+
+@media screen and (min-width: 530px){
+
+/* NETIQUETTE VERSION DESKTOP */
+
+/* suppression de l'affichage mobile */
+
+    #carouselExampleIndicators{
+        display:none;
+    }
+
+/* CSS desktop du reste */
+
+    body {
+        background-color: #C4C4C4;
+    }
+    #netiquette-desktop{
+        display:block;
+    }
+    .netiquette-card{
+        display:flex;
+        justify-content: space-around;
+        margin: 1em;
+        padding:2em;
+        border: 0.3em solid white;
+        border-radius: 1em;
+        background-color:white;
+        min-height: 300px;
+    }
+    .netiquette-card:hover{
+        border-color:#756f70;
+    }
+    .desktop-paragraphe{
+        background-color:white;
+        border-radius: 1em;
+        width: 50%;
+        padding: 0.5em;
+        text-align: justify;
+    }
+
+    .desktop-image{
+        width: 45%;
+        border-radius: 1em;
+        box-shadow: 2px 2px 5px #534d4d;
+    }
+    #netiquette_img {
+        border-radius:1em;
+        width: 100%;
+        box-shadow: 2px 3px 5px #534d4d; 
+    }
+
+    #image_technique{
+        background-image: url("ressources/controle_technique.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    #image_attitude{
+        background-image: url("ressources/attitude_comportement.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    #image_participation{
+        background-image: url("ressources/participation.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    #image_perfectionnement{
+        background-image: url("ressources/perfectionnement.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    .lien-verifications{
+        text-align: center;
+        background-color:white;
+        border-radius: 0.3em;
+        color:black;
+    }
+    .lien-verifications:hover{
+        background-color:#C4C4C4;
+        color: #FF3366;
+    }
+
+    #carouselExampleIndicators{
+        display:none;
+    }
+
+    a {
+        text-decoration:none;
+        width: 20%;
+        text-align: center;
+           }
+}
