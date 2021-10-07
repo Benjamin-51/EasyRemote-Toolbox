@@ -8,14 +8,13 @@
 
 header {
     width: auto;
-    height: 70vmax;
-    font-family: 'Lato';
+    height: 450px;
+    font-family: 'Lato', 'Segoe UI', sans-serif;
     background-color: #1B1B1B;
 }
 
 .header-bg{
-    height: 70vmax;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/mobile-outils-bg.png);
+    height: 450px;
     background-position: center;
     background-repeat: repeat;
 }
@@ -23,9 +22,9 @@ header {
 nav{
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    height: 120px;
     align-items: center;
-    padding: 50px 25px 0px 25px;
+    padding: 80px 25px 0px 50px;
 }
 
 .logo {
@@ -217,18 +216,6 @@ nav{
 
 /* Mobile Section */
 
-section {
-    background-color: rgb(228, 228, 228);
-    font-family: 'Lato';    
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 /* Footer */ 
 
@@ -236,7 +223,6 @@ footer {
     height: 50vh;
     font-family: 'Lato';
     background-color: #1B1B1B;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/mobile-outils-bg.png);
     color: #FFC700;
     position: relative;
     display: flex;
@@ -304,8 +290,7 @@ footer a {
     }
 
     nav{
-
-        height: 70px;
+        height: 120px;
     }
 
     .logo{
@@ -338,9 +323,9 @@ footer a {
         width: auto;
         height: 430px;
         margin: 0 auto;  
-
         padding: 0;
     }
+
 
     .header-content h1 {
         font-size: 8vmin;
@@ -357,7 +342,7 @@ footer a {
 
     footer {
     background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%) ,url(./ressources/outils-bg.png);
-    background-position-x: right;
+    background-position: center;
     height: 300px;
     }
 
