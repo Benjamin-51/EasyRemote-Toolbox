@@ -8,14 +8,14 @@
 
 header {
     width: auto;
-    height: 60vh;
+    height: 70vmax;
     font-family: 'Lato';
     background-color: #1B1B1B;
 }
 
 .header-bg{
-    height: 60vh;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%) ,url(./ressources/mobile-outils-bg.png);
+    height: 70vmax;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/mobile-outils-bg.png);
     background-position: center;
     background-repeat: repeat;
 }
@@ -23,8 +23,9 @@ header {
 nav{
     display: flex;
     justify-content: space-between;
+    height: 10vh;
     align-items: center;
-    padding: 30px 25px;
+    padding: 50px 25px 0px 25px;
 }
 
 .logo {
@@ -38,41 +39,179 @@ nav{
     width: 15vmin;
 }
 
-.menu-mètre {
+.menu-metre {
     position: fixed;
     right: 25px;
-    width: 50px;
-    height: 50px;
-    background: rgb(216, 216, 216);
+    top: 50px;
+    width: 65px;
+    height: 260px;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.048);
-    cursor: pointer;
-    box-shadow: 0px 5px 16px -5px rgba(0, 0, 0, 0.479);
 }
 
-.mètre-block {
+.menu-block{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    margin-left: 4px;
+    background: rgb(216, 216, 216);
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.158);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.blockeur {
     height: 20px;
-    width: 15px;
+    width: 20px;
     margin: 30% auto;
     background: rgb(156, 0, 0);
+    z-index: 2;
+}
+
+.collapsible{
+    transition-duration: 0.5s;
+    max-height: 1000px;
+}
+
+.collapsed {
+    max-height: 60px
+}
+
+.menu-ruban {
+    position: relative;
+    width: 50px;
+    height: 245px;
+    margin: 0 auto;
+    background: #FFC700;
+    border: 1px solid rgba(0, 0, 0, 0.048);
+    box-shadow: 0px 5px 16px -5px rgba(0, 0, 0, 0.479);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.menu-grille {
+    position: absolute;
+    width: 6px;
+    height: 182.5px;
+    background-image: linear-gradient(0deg, #ffc700 33.33%, #87792b 33.33%, #87792b 50%, #ffc700 50%, #ffc700 83.33%, #87792b 83.33%, #87792b 100%);
+    background-size: 10.00px 10.00px;
+    right: -1px;
+    bottom: 2px;
+}
+
+.separator{
+    position: absolute;
+    width: 15px;
+    height: 155px;
+    top: 4.5px;
+    right: -1px;
+    background-image: linear-gradient(0deg, #ffc80000 46.88%, #796a15 46.88%, #796a15 50%, #ffc80000 50%, #ffc80000 96.88%, #796a15 96.88%, #796a15 100%);    
+    background-size: 99.00px 99.50px;
+}
+
+.menu-bout {
+    position: absolute;
+}
+
+#metal-1 {
+    margin: 0 auto;
+    height: 15px;
+    width: 15px;
+    background: cornsilk;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#metal-circle {
+    position: absolute;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background: rgb(83, 83, 83);
+    border-radius: 50px;
+}
+
+#metal-2 {
+    margin: 0 auto;
+    height: 12px;
+    width: 35px;
+    background: cornsilk;
+    border-radius: 5px 5px 0 0;
+}
+
+.bout{
+    height: 7px;
+    width: 65px;
+    background: rgb(68, 68, 68);
+    border-radius: 5px;
+    z-index: 4;
+    overflow: visible;
+}
+
+.menu-icones {
+    position: absolute;
+    width: 35px;
+    height: 135px;
+    top: 74px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.menu-icone {
+    position: sticky;
+    width: 35px;
+    height: 35px;
+    background: #1B1B1B;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-icone#outils {
+    background-image: url(./ressources/menu/tool-icon-8066.png);
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-icone#astuces {
+    background-image: url(./ressources/menu/bulb-icon-8066.png);
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-icone#netiquette {
+    background-image: url(./ressources/menu/chat-icon-8066.png);
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header-content {
-    width: 80%;
-    margin: 25px auto;
+    width: auto;
+    height: 45vh;
     text-align: center;
     color: white;
-
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    padding: 30px 0;
 }
 
 .header-content h1 {
-    font-size: 30px;
+    font-size: 6vmax;
+    margin: 5% 15px;
 }
 
 .header-content p {
-    margin-top: 40px;
+    margin: 20px 15px;
     color: rgb(194, 194, 194);
-    font-size: 15px;
+    font-size: 3vmax;
     font-weight: bold;
 }
 
@@ -97,13 +236,14 @@ footer {
     height: 50vh;
     font-family: 'Lato';
     background-color: #1B1B1B;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%) ,url(./ressources/mobile-outils-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/mobile-outils-bg.png);
     color: #FFC700;
     position: relative;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
+    z-index: -1;
 }
 
 footer a {
@@ -155,17 +295,17 @@ footer a {
 /* Desktop Header */
 
     header{
-        height: 70vh;
+        height: 550px;
     }
 
     .header-bg{
-        height: 70vh;
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%) ,url(./ressources/outils-bg.png);
-
+        height: 550px;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url(./ressources/outils-bg.png)  ;
     }
 
     nav{
-        padding: 50px 80px;
+
+        height: 70px;
     }
 
     .logo{
@@ -179,22 +319,36 @@ footer a {
         width: 10vmin;
     }
 
-    .menu-mètre {
+    .menu-metre {
         position: absolute;
-        right: 50px;
+        right: 100px;
+        transform: rotate(90deg);
+        padding-right: 150px;
+    }
+
+    .menu-icones{
+        transform: scale(1, -1);
+    }
+
+    .menu-icone {
+        transform: rotate(270deg);
     }
 
     .header-content {
-        width: 90vmin;
-        margin: 5vh auto;  
+        width: auto;
+        height: 430px;
+        margin: 0 auto;  
+
+        padding: 0;
     }
 
     .header-content h1 {
-        font-size: 7vmin;
+        font-size: 8vmin;
+        margin: 100px 100px 50px 100px ;
     }
     
     .header-content p {
-        margin-top: 40px;
+        margin: 0 60px;
         font-size: 20px;
         font-weight: 400;
     }
@@ -204,6 +358,7 @@ footer a {
     footer {
     background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%) ,url(./ressources/outils-bg.png);
     background-position-x: right;
+    height: 300px;
     }
 
     .social{
