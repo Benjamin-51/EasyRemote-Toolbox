@@ -25,7 +25,6 @@ section.astuces>article {
     padding: 1em;
     margin: .5em;
     margin-bottom: 1.5em;
-    border:1px solid #FFFFFF;
     border-radius: .3em;
     background-color: #FFFFFF ;
     box-shadow: 0.7px 1.3px 1.3px 1.3px rgb(170, 167, 167);
@@ -39,7 +38,7 @@ section h2 {
     padding-top: 0.5em;
 }
 
-#images-astuces{
+.images-astuces{
     border: 1px solid rgb(228, 228, 228);
     margin: 1.5em;
     border-radius: .3em;
@@ -68,4 +67,5 @@ article p {
 
     section.astuces>article{
         width: 25%;
+    }
 }
