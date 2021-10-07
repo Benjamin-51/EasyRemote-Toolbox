@@ -1,0 +1,65 @@
+.mentions_legales {
+    background-color: #c4c4c4;
+        font-family: 'Lato';    
+        font-weight: bold;
+        text-align: justify; 
+    }
+    .Titre1 {
+        
+        font-size: 50pt;
+        font-style: oblique;
+        font-weight: bold;
+        text-align: center;
+        color: #FF3366;
+    }
+    .sous_titre1, .sous_titre2, .sous_titre3, .sous_titre4, .sous_titre5, .sous_titre6, .sous_titre7, .sous_titre8{
+    
+        font-size: 30pt;
+        font-style: oblique;
+        font-weight: bold;
+        text-align: justify;
+        color: #FF3366;
+        text-decoration: underline;
+        padding: 10px;
+        margin-left: 90px;
+    }
+    .para1 {
+    
+        font-size: 14pt;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        color: black ;
+        padding: 10px;
+        margin-left: 40px;
+        margin-right: 50px;
+    
+    }
+    
+    .para2, .para3, .para4, .para5, .para6, .para7, .para8, .para9, .para10 {
+    
+        font-size: 14pt;
+        font-style: normal;
+        font-weight: normal;
+        text-align: justify;
+        color: # black ;
+        padding: 10px;
+        margin-left: 40px;
+        margin-right: 50px;
+    
+    }
+    
+    
+    
+    section {
+        background-color: rgb(228, 228, 228);
+        font-family: 'Lato';    
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
