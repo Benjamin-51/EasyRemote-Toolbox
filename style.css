@@ -216,18 +216,6 @@ nav{
 
 /* Mobile Section */
 
-section {
-    background-color: rgb(228, 228, 228);
-    font-family: 'Lato';    
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 /* Footer */ 
 
