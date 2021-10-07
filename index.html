@@ -18,29 +18,49 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-bg">
-            <nav>
-                <div class="logo">
-                    <img src="./ressources/logo.png" alt="Logo de NouveauNom">
-                    <h3>NouveauNom</h3>
-                </div>
-        
-                <div class="menu-mètre">
-                    <div class="mètre-block"></div>
-                </div>
-            </nav>
-        
-            <div class="header-content">
-                <h1>Une phrase tape à l'oeil qui sonne bien</h1>
-                <p>On peut potentiellement ajouter du texte ici aussi</p>
-            </div>
-        </div>
-        </header>
+<header>
+<div class="header-bg">
+    <nav>
+        <div class="logo">
+            <img src="./ressources/logo.png" alt="Logo de NouveauNom">
+            <h3>JeRemote</h3>
 
-    <section id="home">
-        <h2 class="mainPageIntro">FLUIDIFIEZ VOTRE COMMUNICATION À DISTANCE</h2>
-        <h3 class="mainPageIntro">Laissez-vous guider entre astuces et nouveaux outils…</h3>
+        </div>
+        
+
+        <div class="menu-metre">
+            <div class="menu-block">
+                <div class="blockeur"></div>
+            </div>
+            <div class="menu-ruban collapsible">
+
+                <div class="menu-icones">
+                    <div onclick="location.href='./outils.html'" class="menu-icone" id="outils"></div>
+                    <div onclick="location.href='./astuces.html'" class="menu-icone" id="astuces"></div>
+                    <div onclick="location.href='./netiquette.html'" class="menu-icone" id="netiquette"></div>
+                </div>
+
+                <div class="menu-grille">
+                    <div class="separator"></div>
+                </div>
+                <div class="menu-bout">
+                    <div id="metal-1">
+                        <div id="metal-circle"></div>
+                    </div>
+                    <div id="metal-2"></div>
+                </div>
+            </div>
+            <div class="bout"></div>
+        </div>
+    </nav>
+  
+    <div class="header-content">
+        <h1>Une phrase tape à l'oeil qui sonne bien</h1>
+        <p>On peut potentiellement ajouter du texte ici aussi</p>
+    </div>
+</div>
+</header>
+
 
         <div id="carousel">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -89,7 +109,7 @@
 <footer>
     <div class="logo-footer">
         <img src="./ressources/logo.png" alt="Logo de NouveauNom">
-        <h3>NouveauNom</h3>
+        <h3>JeRemote</h3>
     </div>
     <div class="footer-bottom">
     <div class="social-links">
@@ -105,15 +125,17 @@
     </div>
 
     <div class="mentions">
-        <p>Bidouillé par la <strong>Team Hegémone</strong> © 2021 | <a href="#">Mentions légales</a></p>
+        <p>Bidouillé par la <strong>Team Hégémone</strong> © 2021 | <a href="#">Mentions légales</a></p>
     </div>
     </div>
 </footer>
 
     <script src="https://kit.fontawesome.com/0326ead9ee.js" crossorigin="anonymous"></script>
+    <script src="menu.js"></script>
     <script>
         myCarousel = document.querySelector('#myCarousel');
         var carousel = new bootstrap.Carousel(myCarousel);
     </script>
 </body>
+
 </html>
