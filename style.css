@@ -1,62 +1,212 @@
-#mainPageIndex {
+/* Mobile Header */
+
+header {
+    width: auto;
+    height: 60vh;
+    font-family: 'Lato';
+    background-color: #1B1B1B;
+}
+
+.header-bg{
+    height: 60vh;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%) ,url(./ressources/mobile-outils-bg.png);
+    background-position: center;
+    background-repeat: repeat;
+}
+
+nav{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background-color: #F1F1F1;
+    padding: 30px 25px;
 }
 
-h1.mainPageIntro {
+.logo {
+    width: 120px;
+    color: #FFC700;
     text-align: center;
-    color: #FF3366;
-    font-size: calc(1.25rem + 2.5vw);
+    font-size: 3.5vmin;
 }
 
-h2.mainPageIntro {
+.logo img{
+    width: 15vmin;
+}
+
+.menu-mètre {
+    position: fixed;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: rgb(216, 216, 216);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.048);
+    cursor: pointer;
+    box-shadow: 0px 5px 16px -5px rgba(0, 0, 0, 0.479);
+}
+
+.mètre-block {
+    height: 20px;
+    width: 15px;
+    margin: 30% auto;
+    background: rgb(156, 0, 0);
+}
+
+.header-content {
+    width: 80%;
+    margin: 25px auto;
     text-align: center;
-    color: #020100;
-    font-size: calc(1gitrem + 1.75vw);
+    color: white;
+
 }
 
-/* Pour la version PC */
-#carouselPC{
+.header-content h1 {
+    font-size: 30px;
+}
+
+.header-content p {
+    margin-top: 40px;
+    color: rgb(194, 194, 194);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+/* Mobile Section */
+
+section {
+    background-color: rgb(228, 228, 228);
+    font-family: 'Lato';    
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    height: 50vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width:100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel-itemPC{
-    max-width: 30vw;
-    max-height: 30vw;
+
+/* Footer */ 
+
+footer {
+    height: 50vh;
+    font-family: 'Lato';
+    background-color: #1B1B1B;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%) ,url(./ressources/mobile-outils-bg.png);
+    color: #FFC700;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.carousel-itemPC img{
-    width: 100%;
+footer a {
+    color: #FFC700;
+    text-decoration: none;
 }
 
-@media screen and (min-width: 481px) {
-    #carouselSlider {
-        display: none;
+.logo-footer {
+    width: 120px;
+    color: #FFC700;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo-footer img{
+    width: 60px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    background-color: #1B1B1B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fab {
+    font-size: 25px;
+}
+
+.mentions {
+    margin-bottom: 15px;
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 530px){
+    
+    /* Desktop Header */
+
+    header{
+        height: 70vh;
     }
-}
 
-/* Pour la version PC et le carousel*/
-.carousel-item, .carousel-itemPC {
-    border-radius: 15px;
-    height: 100vw;
-    width: 100%;
-    box-shadow: 2px 6px 2px 1px rgba(0, 0, 0, .2);
-    margin-bottom: 10px;
-}
+    .header-bg{
+        height: 70vh;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%) ,url(./ressources/outils-bg.png);
 
-/* Pour le carousel */
-.carousel-inner {
-    border-radius: 15px;
-}
+    }
 
+    nav{
+        padding: 50px 80px;
+    }
 
-@media screen and (max-width: 480px) {
-    #carouselPC {
-        display: none;
+    .logo{
+        width: 150px;
+        display: flex;
+        align-items: flex-end;
+        font-size: 3vmin;
+    }
+
+    .logo img{
+        width: 10vmin;
+    }
+
+    .menu-mètre {
+        position: absolute;
+        right: 50px;
+    }
+
+    .header-content {
+        width: 90vmin;
+        margin: 5vh auto;  
+    }
+
+    .header-content h1 {
+        font-size: 7vmin;
+    }
+    
+    .header-content p {
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    /* Desktop Footer */
+
+    footer {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%) ,url(./ressources/outils-bg.png);
+    background-position-x: right;
+    }
+
+    .social{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+    }
+
+    .mentions {
+        font-size: 16px;
     }
 }
