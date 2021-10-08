@@ -1,0 +1,157 @@
+/* Mobile Astuces - Astuces pages */
+
+.header-bg{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-astuces-bg.png);
+}
+
+footer{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-astuces-bg.png);
+}
+
+.header-content-pages {
+    width: auto;
+    height: 270px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    padding: 0 15px;
+}
+
+.header-content-pages h1 {
+    font-size: 35px;
+    margin: 20px 30px;
+}
+
+
+main {
+    background-color: #F1F1F1;
+    padding-top: 0.5em;
+}
+
+main h1 {
+    font-size : 1.3em;
+    padding : 2em;
+    text-align: center;
+}
+
+section.astuces {
+    padding: 1em;  
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+section.astuces>article {
+    padding: 1em;
+    margin: .5em;
+    margin-bottom: 1.5em;
+    border-radius: 15px;
+    background-color: #FFFFFF ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+section h2 {
+    font-size: 20px ;
+    font-weight: bold;
+    color: #020100;
+    padding-top: 0.5em;
+}
+
+
+.images-astuces{
+    max-width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-astuces img{
+    height: 80%;
+}
+
+article p {
+    font-size: 1em;
+    text-align: justify;
+    padding: 20px;
+    line-height: 130%;
+}
+
+@media screen and (min-width: 530px){
+
+    .header-bg{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/astuces-bg.png);
+    }
+    
+    footer{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/astuces-bg.png);
+    }
+
+    .header-content-pages {
+        width: auto;
+        height: 430px;
+        margin: 0 auto;  
+        padding: 0 30px;
+    }
+
+    .header-content-pages h1 {
+        max-width: 700px;
+        font-size: 60px;
+        margin: 30px auto 50px auto ;
+    }
+
+    main h1 {
+        font-size : 1.7em;
+    }
+
+    section.astuces {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.astuces>article{
+        width: 25%;
+    }
+
+}
+
+
+
+
+@media print {
+    
+    main {
+        background-color: none;
+    }
+    
+    section.astuces {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.astuces>article{
+        width: 80%;
+        box-shadow: none;
+        background-color: unset;
+    }
+
+    .images-astuces{
+        box-shadow: none;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+/*retire tout ce qui n'est pas dans le body*/
+    body > *:not(main) {
+        display: none;
+    }
+}

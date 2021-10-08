@@ -1,0 +1,112 @@
+.header-content-pages {
+    width: auto;
+    height: 270px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    padding: 0 15px;
+}
+
+.header-content-pages h1 {
+    font-size: 35px;
+    margin: 60px 30px;
+}
+
+.header-content-pages p {
+    margin: 20px 15px;
+    color: rgb(194, 194, 194);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+body{
+    background: #F1F1F1;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+
+}
+
+.mentions_legales {   
+    width: 300px;
+    margin: 50px;
+    padding: 30px;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+    
+.mentions_legales h5 {
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #000000;
+    margin: 30px 0;
+}
+
+.mentions_legales p {
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    color: black ;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+
+@media screen and (min-width: 530px){
+
+    .header-content-pages {
+        width: auto;
+        height: 430px;
+        margin: 0 auto;  
+        padding: 0 30px;
+    }
+
+    .header-content-pages h1 {
+        max-width: 700px;
+        font-size: 80px;
+        margin: 20px auto 50px auto ;
+    }
+    
+    .mentions_legales {   
+        width: 800px;
+        margin: 50px;
+        padding: 30px;
+        background: white;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+        
+    .mentions_legales h5 {
+        font-size: 30px;
+        font-style: oblique;
+        font-weight: bold;
+        color: #000000;
+        margin: 30px 0;
+    }
+    
+    .mentions_legales p {
+        font-size: 14pt;
+        font-style: normal;
+        font-weight: normal;
+        color: black ;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+}

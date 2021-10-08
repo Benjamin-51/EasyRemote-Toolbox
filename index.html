@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <title>NouveauNom - Accueil</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <title>Accueil | JeRemote</title>
 </head>
 <body>
 
 <header>
 <div class="header-bg">
     <nav>
-        <div class="logo">
-            <img src="./ressources/logo.png" alt="Logo de NouveauNom">
+
+        <div class="logo" onclick="location.href='./index.html'">
+            <img src="./ressources/logo.png" alt="Logo de JeRemote">
             <h3>JeRemote</h3>
         </div>
+        
 
         <div class="menu-metre">
             <div class="menu-block">
@@ -45,21 +48,70 @@
             <div class="bout"></div>
         </div>
     </nav>
-
+  
     <div class="header-content">
-        <h1>Une phrase tape à l'oeil qui sonne bien</h1>
-        <p>On peut potentiellement ajouter du texte ici aussi</p>
+        <h1>Parce que chaque expérience a son point de départ</h1>
+        <p>En route vers une aventure remote épanouissante</p>
     </div>
 </div>
 </header>
 
-<section>
-    Insérer la section principale ici
-</section>
+<main>
 
+  <h2>Commencez à collaborer à distance sereinement</h2>
+
+<section>
+
+  <div class="container">
+  <div class="card">
+    <div class="card-content">
+      <h4>Les maîtriser tu sauras</h4>
+      <div class="card-image-container">
+        <div class="card-image" id="outils-logo"></div>
+      </div>
+      <div class="card-text">
+        Lorem ipsum dolor sit amet consectetur adipisicidfsfsdng elit. Corrupti at asperiores natus.
+      </div>
+      <button class="btn">DECOUVRIR</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <h4>Fais le plein d'astuces</h4>
+      <div class="card-image-container">
+        <div class="card-image" id="astuces-logo"></div>
+      </div>
+      <div class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis in labore voluptatem.
+      </div>
+      <button class="btn" onclick="window.location.href='./astuces.html';">HACKER</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <h4>Attention aux règles</h4>
+      <div class="card-image-container">
+        <div class="card-image" id="netiquette-logo"></div>
+      </div>
+      <div class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam cupiditate eaque eaque.
+      </div>
+      <a href="./netiquette.html"><button class="btn">LIRE</button></a>
+    </div>
+  </div>
+</div>
+
+</section>
+</main>    
 <footer>
     <div class="logo-footer">
-        <img src="./ressources/logo.png" alt="Logo de NouveauNom">
+        <img src="./ressources/logo.png" alt="Logo de JeRemote">
         <h3>JeRemote</h3>
     </div>
     <div class="footer-bottom">
@@ -76,12 +128,11 @@
     </div>
 
     <div class="mentions">
-        <p>Bidouillé par la <strong>Team Hégémone</strong> © 2021 | <a href="#">Mentions légales</a></p>
+        <p>Bidouillé par la <strong>Team Hegémone</strong> © 2021 | <a href="./mentions.html">Mentions légales</a></p>
     </div>
     </div>
 </footer>
-
 </body>
-<script src="https://kit.fontawesome.com/0326ead9ee.js" crossorigin="anonymous"></script>
-<script src="menu.js"></script>
+  <script src="https://kit.fontawesome.com/0326ead9ee.js" crossorigin="anonymous"></script>
+  <script src="js/menu.js"></script>
 </html>

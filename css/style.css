@@ -2,20 +2,19 @@
     padding: 0;
     margin: 0;
     border: none;
+    font-family: 'Lato', 'Segoe UI', sans-serif;
 }
 
 /* Mobile Header */
 
 header {
     width: auto;
-    height: 70vmax;
-    font-family: 'Lato';
+    height: 450px;
     background-color: #1B1B1B;
 }
 
 .header-bg{
-    height: 70vmax;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/mobile-outils-bg.png);
+    height: 450px;
     background-position: center;
     background-repeat: repeat;
 }
@@ -23,26 +22,31 @@ header {
 nav{
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    height: 150px;
     align-items: center;
-    padding: 50px 25px 0px 25px;
+    padding: 50px 25px 0px 30px;
 }
 
 .logo {
     width: 120px;
     color: #FFC700;
     text-align: center;
-    font-size: 3.5vmin;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .logo img{
-    width: 15vmin;
+    width: 75px;
+}
+
+.logo h3 {
+    font-size: 20px;
 }
 
 .menu-metre {
     position: fixed;
     right: 25px;
-    top: 50px;
+    top: 100px;
     width: 65px;
     height: 260px;
     border-radius: 5px;
@@ -172,71 +176,32 @@ nav{
 }
 
 .menu-icone#outils {
-    background-image: url(./ressources/menu/tool-icon-8066.png);
+    background-image: url(/ressources/menu/tool-icon-8066.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .menu-icone#astuces {
-    background-image: url(./ressources/menu/bulb-icon-8066.png);
+    background-image: url(/ressources/menu/bulb-icon-8066.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .menu-icone#netiquette {
-    background-image: url(./ressources/menu/chat-icon-8066.png);
+    background-image: url(/ressources/menu/chat-icon-8066.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.header-content {
-    width: auto;
-    height: 45vh;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-flow: column;
-    justify-content:flex-start;
-    padding: 30px 0;
-}
-
-.header-content h1 {
-    font-size: 6vmax;
-    margin: 5% 15px;
-}
-
-.header-content p {
-    margin: 20px 15px;
-    color: rgb(194, 194, 194);
-    font-size: 3vmax;
-    font-weight: bold;
-}
-
-/* Mobile Section */
-
-section {
-    background-color: rgb(228, 228, 228);
-    font-family: 'Lato';    
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* Footer */ 
+/* Mobile Footer */ 
 
 footer {
-    height: 50vh;
+    height: 250px;
     font-family: 'Lato';
     background-color: #1B1B1B;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/mobile-outils-bg.png);
     color: #FFC700;
     position: relative;
     display: flex;
@@ -260,6 +225,7 @@ footer a {
 
 .logo-footer img{
     width: 60px;
+    cursor: pointer;
 }
 
 .social-links {
@@ -279,6 +245,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .fab {
@@ -288,6 +255,11 @@ footer a {
 .mentions {
     margin-bottom: 15px;
     font-size: 3vw;
+}
+
+.mentions a {
+    cursor: pointer;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 530px){
@@ -300,12 +272,12 @@ footer a {
 
     .header-bg{
         height: 550px;
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url(./ressources/outils-bg.png)  ;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url(./ressources/background/outils-bg.png)  ;
     }
 
     nav{
-
-        height: 70px;
+        height: 120px;
+        padding: 80px 25px 0px 60px;
     }
 
     .logo{
@@ -316,7 +288,11 @@ footer a {
     }
 
     .logo img{
-        width: 10vmin;
+        width: 75px;
+    }
+
+    .logo h3 {
+        font-size: 30px;
     }
 
     .menu-metre {
@@ -334,31 +310,14 @@ footer a {
         transform: rotate(270deg);
     }
 
-    .header-content {
-        width: auto;
-        height: 430px;
-        margin: 0 auto;  
-
-        padding: 0;
-    }
-
-    .header-content h1 {
-        font-size: 8vmin;
-        margin: 100px 100px 50px 100px ;
-    }
-    
-    .header-content p {
-        margin: 0 60px;
-        font-size: 20px;
-        font-weight: 400;
-    }
-
 /* Desktop Footer */
 
     footer {
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%) ,url(./ressources/outils-bg.png);
-    background-position-x: right;
     height: 300px;
+    }
+
+    .logo-footer{
+        cursor: pointer;
     }
 
     .social{
