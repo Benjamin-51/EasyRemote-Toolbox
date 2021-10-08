@@ -310,25 +310,6 @@ footer a {
         transform: rotate(270deg);
     }
 
-    .header-content {
-        width: auto;
-        height: 430px;
-        margin: 0 auto;  
-        padding: 0 30px;
-    }
-
-    .header-content h1 {
-        max-width: 700px;
-        font-size: 60px;
-        margin: 30px auto 50px auto ;
-    }
-
-    .header-content p {
-        margin: 0 60px;
-        font-size: 20px;
-        font-weight: 400;
-    }
-
 /* Desktop Footer */
 
     footer {
