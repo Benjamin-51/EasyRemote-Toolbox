@@ -29,6 +29,29 @@ h2 {
     font-size: 20px;
 }
 
+.header-content {
+    width: auto;
+    height: 270px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    padding: 0 15px;
+}
+
+.header-content h1 {
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.header-content p {
+    margin: 20px 15px;
+    color: rgb(194, 194, 194);
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -113,6 +136,25 @@ h4 {
     
     footer{
         background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/home-bg.png);
+    }
+
+    .header-content {
+        width: auto;
+        height: 430px;
+        margin: 0 auto;  
+        padding: 0 30px;
+    }
+
+    .header-content h1 {
+        max-width: 800px;
+        font-size: 60px;
+        margin: 30px auto 50px auto ;
+    }
+
+    .header-content p {
+        margin: 0 60px;
+        font-size: 20px;
+        font-weight: 400;
     }
 
     main {

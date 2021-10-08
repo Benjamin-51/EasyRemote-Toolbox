@@ -43,29 +43,6 @@ nav{
     font-size: 20px;
 }
 
-.header-content {
-    width: auto;
-    height: 270px;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-flow: column;
-    justify-content:flex-start;
-    padding: 0 15px;
-}
-
-.header-content h1 {
-    font-size: 35px;
-    margin: 20px 0;
-}
-
-.header-content p {
-    margin: 20px 15px;
-    color: rgb(194, 194, 194);
-    font-size: 15px;
-    font-weight: bold;
-}
-
 .menu-metre {
     position: fixed;
     right: 25px;
