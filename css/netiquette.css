@@ -1,9 +1,9 @@
 .header-bg{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-netiquette-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-netiquette-bg.png);
 }
 
 footer{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-netiquette-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-netiquette-bg.png);
 }
 
 /* Suppression affichage version desktop, version mobile affichée par défaut */
@@ -17,6 +17,22 @@ footer{
 
 body{
     background: #F1F1F1;
+}
+
+.header-content-pages {
+    width: auto;
+    height: 270px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    padding: 0 15px;
+}
+
+.header-content-pages h1 {
+    font-size: 35px;
+    margin: 60px 30px;
 }
 
 main{
@@ -33,6 +49,14 @@ h2 {
 h3 {
     font-size: 15px;
     padding: 0 30px;
+}
+
+.main-title{
+    margin: 20px 0;
+}
+
+.main-title h2{
+    font-size: 20px;
 }
 
 .carousel-inner{
@@ -85,17 +109,30 @@ h3 {
     }
 
     .header-bg{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/netiquette-bg.png);
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/netiquette-bg.png);
     }
     
     footer{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/netiquette-bg.png);
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/netiquette-bg.png);
+    }
+
+    .header-content-pages {
+        width: auto;
+        height: 430px;
+        margin: 0 auto;  
+        padding: 0 30px;
+    }
+
+    .header-content-pages h1 {
+        max-width: 700px;
+        font-size: 60px;
+        margin: 80px auto 50px auto ;
     }
 
     main {
     position:relative;
     width: auto;
-    min-height: 1650px;
+    min-height: 1450px;
     text-align: center;
     background: #F1F1F1;
 }
@@ -105,6 +142,13 @@ h3 {
         justify-content: center;
     }
 
+    .main-title{
+        margin: 20px 0;
+    }
+
+    .main-title h2{
+        font-size: 30px;
+    }
 
     #netiquette-desktop{
         display:block;

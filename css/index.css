@@ -1,9 +1,9 @@
 .header-bg{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-home-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-home-bg.png);
 }
 
 footer{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-home-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-home-bg.png);
 }
 
 main {
@@ -69,18 +69,18 @@ h4 {
 }
 
 #outils-logo {
-    background: url(./ressources/outils-logo.png);
+    background: url(/ressources/index/outils-logo.png);
     background-size: cover;
 }
 
 #astuces-logo {
-    background: url(./ressources/astuces-logo.png);
+    background: url(/ressources/index/astuces-logo.png);
     background-size: cover;
     padding: 10px 0;
 }
 
 #netiquette-logo {
-    background: url(./ressources/netiquette-logo.png);
+    background: url(/ressources/index/netiquette-logo.png);
     background-size: cover;
     padding: 10px 0;
 }
@@ -108,11 +108,11 @@ h4 {
 
 @media screen and (min-width: 530px){
     .header-bg{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/home-bg.png);
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/home-bg.png);
     }
     
     footer{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/home-bg.png);
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/home-bg.png);
     }
 
     main {
