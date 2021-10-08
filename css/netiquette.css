@@ -192,25 +192,25 @@ h3 {
     }
 
     #image_technique{
-        background-image: url("../ressources/netiquette/controle_technique.jpg");
+        background-image: url("./ressources/netiquette/controle_technique.jpg");
         background-size:cover;
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_attitude{
-        background-image: url("../ressources/netiquette/attitude_comportement.jpg");
+        background-image: url("./ressources/netiquette/attitude_comportement.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_participation{
-        background-image: url("../ressources/netiquette/participation.jpg");
+        background-image: url("./ressources/netiquette/participation.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_perfectionnement{
-        background-image: url("../ressources/netiquette/perfectionnement.jpg");
+        background-image: url("./ressources/netiquette/perfectionnement.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
