@@ -1,9 +1,9 @@
 .header-bg{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-netiquette-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url("../ressources/bg/mobile-netiquette-bg.png");
 }
 
 footer{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-netiquette-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url("../ressources/bg/mobile-netiquette-bg.png");
 }
 
 /* Suppression affichage version desktop, version mobile affichée par défaut */
@@ -109,11 +109,11 @@ h3 {
     }
 
     .header-bg{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/netiquette-bg.png);
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url("../ressources/bg/netiquette-bg.png");
     }
     
     footer{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/netiquette-bg.png);
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url("../ressources/bg/netiquette-bg.png");
     }
 
     .header-content-pages {
@@ -193,25 +193,25 @@ h3 {
     }
 
     #image_technique{
-        background-image: url("ressources/controle_technique.jpg");
+        background-image: url("../ressources/controle_technique.jpg");
         background-size:cover;
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_attitude{
-        background-image: url("ressources/attitude_comportement.jpg");
+        background-image: url("../ressources/attitude_comportement.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_participation{
-        background-image: url("ressources/participation.jpg");
+        background-image: url("../ressources/participation.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_perfectionnement{
-        background-image: url("ressources/perfectionnement.jpg");
+        background-image: url("../ressources/perfectionnement.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
