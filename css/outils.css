@@ -52,15 +52,15 @@ main{
 }
 
 .card{
-    max-width: 250px;
-    min-height: 350px;
+    max-width: 300px;
+    min-height: 550px;
     background: white;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 h4 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -82,22 +82,22 @@ h4 {
 
 .card-image {
     height: 80px;
-    width: 100px;
+    width: 70px;
 }
 
 #outils-logo {
-    background: url("../ressources/index/outils-logo.png");
+    background: url("../ressources/outils/discord.png");
     background-size: cover;
 }
 
 #astuces-logo {
-    background: url("../ressources/index/astuces-logo.png");
+    background: url("../ressources/outils/meet.png");
     background-size: cover;
     padding: 10px 0;
 }
 
 #netiquette-logo {
-    background: url("../ressources/index/netiquette-logo.png");
+    background: url("../ressources/outils/whatsapp.png");
     background-size: cover;
     padding: 10px 0;
 }

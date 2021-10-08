@@ -69,7 +69,7 @@ h3 {
 }
 
 .netiquette_h2 {
-    color:#FF3366;
+    color:#111111;
     text-align:center;
     font-size: 1.5em;
     padding: 30px 0;
@@ -80,7 +80,6 @@ h3 {
     padding: 0 3em;
     width: 100%;
     max-height: auto;
-    border: 2px solid black;
 }
 
 .netiquette_caption {
@@ -88,14 +87,14 @@ h3 {
     color: #202020;
     font-size: 0.7em;
     padding-top: 0.5em;
-    color:crimson;
+    color:rgb(0, 0, 0);
 }
 .netiquette_paragraphe {
     text-align: justify;
     padding: 0 3em;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon  {
-    background-color: #FF3366;
+    background-color: #000000;
 }
 
 
@@ -193,25 +192,25 @@ h3 {
     }
 
     #image_technique{
-        background-image: url("ressources/controle_technique.jpg");
+        background-image: url("../ressources/netiquette/controle_technique.jpg");
         background-size:cover;
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_attitude{
-        background-image: url("ressources/attitude_comportement.jpg");
+        background-image: url("../ressources/netiquette/attitude_comportement.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_participation{
-        background-image: url("ressources/participation.jpg");
+        background-image: url("../ressources/netiquette/participation.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_perfectionnement{
-        background-image: url("ressources/perfectionnement.jpg");
+        background-image: url("../ressources/netiquette/perfectionnement.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
