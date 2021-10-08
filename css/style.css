@@ -176,21 +176,21 @@ nav{
 }
 
 .menu-icone#outils {
-    background-image: url(/ressources/menu/tool-icon-8066.png);
+    background-image: url(./ressources/menu/tool-icon-8066.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .menu-icone#astuces {
-    background-image: url(/ressources/menu/bulb-icon-8066.png);
+    background-image: url(./ressources/menu/bulb-icon-8066.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .menu-icone#netiquette {
-    background-image: url(/ressources/menu/chat-icon-8066.png);
+    background-image: url(./ressources/menu/chat-icon-8066.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     background-position: center;
