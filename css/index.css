@@ -103,7 +103,7 @@ h4 {
 }
 
 #netiquette-logo {
-    background: url("/ressources/index/netiquette-logo.png");
+    background: url("../ressources/index/netiquette-logo.png");
     background-size: cover;
     padding: 10px 0;
 }
