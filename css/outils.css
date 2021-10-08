@@ -1,9 +1,9 @@
 .header-bg{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-outils-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url("../ressources/bg/mobile-outils-bg.png");
 }
 
 footer{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-outils-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url("../ressources/bg/mobile-outils-bg.png");
 }
 
 /* Suppression affichage version desktop, version mobile affichée par défaut */
@@ -86,18 +86,18 @@ h4 {
 }
 
 #outils-logo {
-    background: url(/ressources/index/outils-logo.png);
+    background: url(../ressources/index/outils-logo.png);
     background-size: cover;
 }
 
 #astuces-logo {
-    background: url(/ressources/index/astuces-logo.png);
+    background: url(../ressources/index/astuces-logo.png);
     background-size: cover;
     padding: 10px 0;
 }
 
 #netiquette-logo {
-    background: url(/ressources/index/netiquette-logo.png);
+    background: url(../ressources/index/netiquette-logo.png);
     background-size: cover;
     padding: 10px 0;
 }
@@ -174,11 +174,11 @@ h3 {
     }
 
     .header-bg{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/outils-bg.png);
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url("../ressources/bg/outils-bg.png");
     }
 
     footer{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/outils-bg.png);
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url("../ressources/bg/outils-bg.png");
     }
 
     .header-content-pages {
