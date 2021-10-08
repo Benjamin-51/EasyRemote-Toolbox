@@ -167,7 +167,7 @@ h3 {
     }
 
     .netiquette_h2 {
-        color:#FF3366;
+        color:#131313;
         text-align:center;
         font-size: 1.5em;
         padding: 0;
@@ -222,8 +222,8 @@ h3 {
         color:black;
     }
     .lien-verifications:hover{
-        background-color:#C4C4C4;
-        color: #FF3366;
+        background-color:#dadada;
+        color: #131313;
     }
 
     #carouselExampleIndicators{
