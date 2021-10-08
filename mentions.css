@@ -1,65 +1,112 @@
-.mentions_legales {
-    background-color: #c4c4c4;
-        font-family: 'Lato';    
-        font-weight: bold;
-        text-align: justify; 
+.header-content-pages {
+    width: auto;
+    height: 270px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    padding: 0 15px;
+}
+
+.header-content-pages h1 {
+    font-size: 35px;
+    margin: 60px 30px;
+}
+
+.header-content-pages p {
+    margin: 20px 15px;
+    color: rgb(194, 194, 194);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+body{
+    background: #F1F1F1;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+
+}
+
+.mentions_legales {   
+    width: 300px;
+    margin: 50px;
+    padding: 30px;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+    
+.mentions_legales h5 {
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #000000;
+    margin: 30px 0;
+}
+
+.mentions_legales p {
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    color: black ;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+
+@media screen and (min-width: 530px){
+
+    .header-content-pages {
+        width: auto;
+        height: 430px;
+        margin: 0 auto;  
+        padding: 0 30px;
     }
-    .Titre1 {
-        
-        font-size: 50pt;
-        font-style: oblique;
-        font-weight: bold;
-        text-align: center;
-        color: #FF3366;
-    }
-    .sous_titre1, .sous_titre2, .sous_titre3, .sous_titre4, .sous_titre5, .sous_titre6, .sous_titre7, .sous_titre8{
-    
-        font-size: 30pt;
-        font-style: oblique;
-        font-weight: bold;
-        text-align: justify;
-        color: #FF3366;
-        text-decoration: underline;
-        padding: 10px;
-        margin-left: 90px;
-    }
-    .para1 {
-    
-        font-size: 14pt;
-        font-style: normal;
-        font-weight: normal;
-        text-align: center;
-        color: black ;
-        padding: 10px;
-        margin-left: 40px;
-        margin-right: 50px;
-    
+
+    .header-content-pages h1 {
+        max-width: 700px;
+        font-size: 80px;
+        margin: 20px auto 50px auto ;
     }
     
-    .para2, .para3, .para4, .para5, .para6, .para7, .para8, .para9, .para10 {
-    
-        font-size: 14pt;
-        font-style: normal;
-        font-weight: normal;
-        text-align: justify;
-        color: black ;
-        padding: 10px;
-        margin-left: 40px;
-        margin-right: 50px;
-    
-    }
-    
-    
-    
-    section {
-        background-color: rgb(228, 228, 228);
-        font-family: 'Lato';    
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        height: 50vh;
+    .mentions_legales {   
+        width: 800px;
+        margin: 50px;
+        padding: 30px;
+        background: white;
         display: flex;
-        justify-content: center;
+        flex-flow: column;
         align-items: center;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+        
+    .mentions_legales h5 {
+        font-size: 30px;
+        font-style: oblique;
+        font-weight: bold;
+        color: #000000;
+        margin: 30px 0;
     }
     
+    .mentions_legales p {
+        font-size: 14pt;
+        font-style: normal;
+        font-weight: normal;
+        color: black ;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+}

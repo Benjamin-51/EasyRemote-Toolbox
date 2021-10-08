@@ -4,49 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- LIEN CSS BOOTSTAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <!-- LIEN CSS GENERAL -->
-    <link href="style.css" rel="stylesheet">
-    <!-- LIEN CSS LOCAL -->
-    <link href="netiquette.css" rel="stylesheet">
-    <!-- LIEN FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    
-    <title>Netiquette</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="netiquette.css" rel="stylesheet" type="text/css" />
+    <title>Nétiquette | JeRemote</title>
 </head>
-
 <body>
-    <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" 
-    crossorigin="anonymous">
-    </script>
 
-    <header>
-        <div class="header-bg">
-         <nav>
-            <div class="logo">
-                <img src="./ressources/logo.png" alt="Logo de JeRemote">
-                <h3>JeRemote</h3>
-            </div>
-            <div class="menu-mètre">
-                <div class="mètre-block"></div>
-            </div>
-          </nav>
-
-         <div class="header-content">
-            <h1>Même en remote, il y a des règles...</h1>
-           </div>
+<header>
+<div class="header-bg">
+    <nav>
+        
+        <div class="logo" onclick="location.href='./index.html'">
+            <img src="./ressources/logo.png" alt="Logo de JeRemote">
+            <h3>JeRemote</h3>
         </div>
-    </header>
+        
+
+        <div class="menu-metre">
+            <div class="menu-block">
+                <div class="blockeur"></div>
+            </div>
+            <div class="menu-ruban collapsible">
+
+                <div class="menu-icones">
+                    <div onclick="location.href='./outils.html'" class="menu-icone" id="outils"></div>
+                    <div onclick="location.href='./astuces.html'" class="menu-icone" id="astuces"></div>
+                    <div onclick="location.href='./netiquette.html'" class="menu-icone" id="netiquette"></div>
+                </div>
+
+                <div class="menu-grille">
+                    <div class="separator"></div>
+                </div>
+                <div class="menu-bout">
+                    <div id="metal-1">
+                        <div id="metal-circle"></div>
+                    </div>
+                    <div id="metal-2"></div>
+                </div>
+            </div>
+            <div class="bout"></div>
+        </div>
+    </nav>
+  
+    <div class="header-content-pages">
+        <h1>Même en remote, il y a des règles ...</h1>
+    </div>
+</div>
+</header>
     
     <main>
-    
+        <h2>Introduction à la <em>Nétiquette</em></h2>
+        <h3>Garder ces règles en tête, c’est profiter d’une expérience agréable (à revoir)</em></h3>
+        
     <!-- FORMAT MOBILE-->
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -118,7 +131,7 @@
         </div>
 
     <!-- FORMAT DESKTOP -->
-
+    <section>
     <div id="netiquette-desktop">  <!-- appellation générale de la div desktop qui apparait seulement en format desktop -->
 
         <div class="netiquette-card"> 
@@ -165,14 +178,12 @@
                 </div>
             </div>
         </div>
-            
-    
-        
+    </section>
     </main>
 
 
     <footer>
-        <div class="logo-footer">
+        <div class="logo-footer" onclick="location.href='./index.html'">
             <img src="./ressources/logo.png" alt="Logo de JeRemote">
             <h3>JeRemote</h3>
         </div>
@@ -195,7 +206,8 @@
         </div>
     </footer>
 
-    
-
 </body>
+<script src="menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0326ead9ee.js" crossorigin="anonymous"></script>
 </html>

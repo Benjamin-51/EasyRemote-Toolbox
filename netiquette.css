@@ -1,6 +1,10 @@
-/* CSS NETIQUETTE */
+.header-bg{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-netiquette-bg.png);
+}
 
-/*NETIQUETTE VERSION MOBILE FIRST*/
+footer{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-netiquette-bg.png);
+}
 
 /* Suppression affichage version desktop, version mobile affichée par défaut */
 
@@ -10,8 +14,29 @@
 
 /* Reste du CSS */
 
+
+body{
+    background: #F1F1F1;
+}
+
+main{
+    text-align: center;
+}
+
+h2 {
+    margin: 0 auto;
+    padding: 30px 20px 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 15px;
+    padding: 0 30px;
+}
+
 .carousel-inner{
-    background-color:#C4C4C4;
+    background-color:#F1F1F1;
     padding: 1em;
 }
 .carousel-item {
@@ -19,18 +44,22 @@
     border-radius: 1em;
     min-height: 600px;
 }
+
+.netiquette_h2 {
+    color:#FF3366;
+    text-align:center;
+    font-size: 1.5em;
+    padding: 30px 0;
+}
+
 .netiquette_img {
     border-radius:3em;
     padding: 0 3em;
     width: 100%;
     max-height: auto;
+    border: 2px solid black;
 }
-.netiquette_h2 {
-    color:#FF3366;
-    text-align:center;
-    font-size: 1.5em;
-    padding-top: 1em;
-}
+
 .netiquette_caption {
     text-align:center;
     color: #202020;
@@ -47,40 +76,60 @@
 }
 
 
-
 /* ********************* MEDIA QUERIES *************************/
 
 @media screen and (min-width: 530px){
 
-/* NETIQUETTE VERSION DESKTOP */
-
-/* suppression de l'affichage mobile */
-
-    #carouselExampleIndicators{
+    .carousel{
         display:none;
     }
 
-/* CSS desktop du reste */
-
-    body {
-        background-color: #C4C4C4;
+    .header-bg{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/netiquette-bg.png);
     }
+    
+    footer{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/netiquette-bg.png);
+    }
+
+    main {
+    position:relative;
+    width: auto;
+    min-height: 1650px;
+    text-align: center;
+    background: #F1F1F1;
+}
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+
     #netiquette-desktop{
         display:block;
     }
+
     .netiquette-card{
         display:flex;
         justify-content: space-around;
         margin: 1em;
-        padding:2em;
+        padding: 20px;
         border: 0.3em solid white;
         border-radius: 1em;
         background-color:white;
-        min-height: 300px;
+        width: 1000px;
+        max-height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
-    .netiquette-card:hover{
-        border-color:#756f70;
+
+    .netiquette_h2 {
+        color:#FF3366;
+        text-align:center;
+        font-size: 1.5em;
+        padding: 0;
     }
+
     .desktop-paragraphe{
         background-color:white;
         border-radius: 1em;
@@ -92,12 +141,11 @@
     .desktop-image{
         width: 45%;
         border-radius: 1em;
-        box-shadow: 2px 2px 5px #534d4d;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
     #netiquette_img {
         border-radius:1em;
         width: 100%;
-        box-shadow: 2px 3px 5px #534d4d; 
     }
 
     #image_technique{

@@ -22,9 +22,9 @@ header {
 nav{
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 150px;
     align-items: center;
-    padding: 80px 25px 0px 30px;
+    padding: 50px 25px 0px 30px;
 }
 
 .logo {
@@ -32,10 +32,38 @@ nav{
     color: #FFC700;
     text-align: center;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .logo img{
     width: 75px;
+}
+
+.logo h3 {
+    font-size: 20px;
+}
+
+.header-content {
+    width: auto;
+    height: 270px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    padding: 0 15px;
+}
+
+.header-content h1 {
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.header-content p {
+    margin: 20px 15px;
+    color: rgb(194, 194, 194);
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .menu-metre {
@@ -191,36 +219,10 @@ nav{
     background-position: center;
 }
 
-.header-content {
-    width: auto;
-    height: 270px;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-flow: column;
-    justify-content:flex-start;
-    padding: 20px 15px;
-}
-
-.header-content h1 {
-    font-size: 30px;
-    margin: 20px 0;
-}
-
-.header-content p {
-    margin: 20px 15px;
-    color: rgb(194, 194, 194);
-    font-size: 15px;
-    font-weight: bold;
-}
-
-/* Mobile Section */
-
-
-/* Footer */ 
+/* Mobile Footer */ 
 
 footer {
-    height: 50vh;
+    height: 250px;
     font-family: 'Lato';
     background-color: #1B1B1B;
     color: #FFC700;
@@ -246,6 +248,7 @@ footer a {
 
 .logo-footer img{
     width: 60px;
+    cursor: pointer;
 }
 
 .social-links {
@@ -265,6 +268,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .fab {
@@ -274,6 +278,11 @@ footer a {
 .mentions {
     margin-bottom: 15px;
     font-size: 3vw;
+}
+
+.mentions a {
+    cursor: pointer;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 530px){
@@ -303,6 +312,10 @@ footer a {
 
     .logo img{
         width: 75px;
+    }
+
+    .logo h3 {
+        font-size: 30px;
     }
 
     .menu-metre {
@@ -345,6 +358,11 @@ footer a {
     background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%) ,url(./ressources/outils-bg.png);
     background-position: center;
     height: 300px;
+    }
+
+
+    .logo-footer{
+        cursor: pointer;
     }
 
     .social{

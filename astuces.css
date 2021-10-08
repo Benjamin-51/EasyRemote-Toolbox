@@ -1,7 +1,38 @@
 /* Mobile Astuces - Astuces pages */
 
+.header-bg{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-astuces-bg.png);
+}
+
+footer{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/mobile-astuces-bg.png);
+}
+
+.header-content-pages {
+    width: auto;
+    height: 270px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    padding: 0 15px;
+}
+
+.header-content-pages h1 {
+    font-size: 35px;
+    margin: 20px 30px;
+}
+
+.header-content-pages p {
+    margin: 20px 15px;
+    color: rgb(194, 194, 194);
+    font-size: 15px;
+    font-weight: bold;
+}
+
 main {
-    background-color: rgb(228, 228, 228);
+    background-color: #F1F1F1;
     padding-top: 0.5em;
 }
 
@@ -25,40 +56,67 @@ section.astuces>article {
     padding: 1em;
     margin: .5em;
     margin-bottom: 1.5em;
-    border-radius: .3em;
+    border-radius: 15px;
     background-color: #FFFFFF ;
-    box-shadow: 0.7px 1.3px 1.3px 1.3px rgb(170, 167, 167);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 section h2 {
     font-family: 'Lato';
-    font-size: 1.1em ;
+    font-size: 20px ;
     font-weight: bold;
     color: #020100;
     padding-top: 0.5em;
 }
 
+
 .images-astuces{
-    margin: 1.5em;
-    border-radius: .3em;
-    background-color: rgb(228, 228, 228);
-    box-shadow: 0.7px 1.3px 1.3px 1.3px rgb(170, 167, 167);
-    height:10em;
+    max-width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-img{
-    padding : 2.3em;
+.images-astuces img{
+    height: 80%;
 }
 
 article p {
     font-family: 'Lato';
     font-size: 1em;
     text-align: justify;
-    padding: 2.2em;
+    padding: 20px;
     line-height: 130%;
 }
 
 @media screen and (min-width: 530px){
+
+    .header-bg{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/astuces-bg.png);
+    }
+    
+    footer{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(./ressources/background/astuces-bg.png);
+    }
+
+    .header-content-pages {
+        width: auto;
+        height: 430px;
+        margin: 0 auto;  
+        padding: 0 30px;
+    }
+
+    .header-content-pages h1 {
+        max-width: 700px;
+        font-size: 60px;
+        margin: 30px auto 50px auto ;
+    }
+
     section.astuces {
         flex-direction: row;
         flex-wrap: wrap;
@@ -67,7 +125,11 @@ article p {
     section.astuces>article{
         width: 25%;
     }
+
 }
+
+
+
 
 @media print {
     
