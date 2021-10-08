@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/outils.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="ressources/favicon.ico"/>
+    <title>Les Outils | JeRemote</title>
+</head>
+<body>
+
+<header>
+<div class="header-bg">
+    <nav>
+        
+        <div class="logo" onclick="location.href='./index.html'">
+            <img src="./ressources/logo.png" alt="Logo de JeRemote">
+            <h3>JeRemote</h3>
+        </div>
+        
+        <div class="menu-metre">
+            <div class="menu-block">
+                <div class="blockeur"></div>
+            </div>
+            <div class="menu-ruban collapsible">
+
+                <div class="menu-icones">
+                    <div onclick="location.href='./outils.html'" class="menu-icone" id="outils"></div>
+                    <div onclick="location.href='./astuces.html'" class="menu-icone" id="astuces"></div>
+                    <div onclick="location.href='./netiquette.html'" class="menu-icone" id="netiquette"></div>
+                </div>
+
+                <div class="menu-grille">
+                    <div class="separator"></div>
+                </div>
+                <div class="menu-bout">
+                    <div id="metal-1">
+                        <div id="metal-circle"></div>
+                    </div>
+                    <div id="metal-2"></div>
+                </div>
+            </div>
+            <div class="bout"></div>
+        </div>
+    </nav>
+  
+    <div class="header-content-pages">
+        <h1>Les meilleurs outils de communication remote</h1>
+    </div>
+</div>
+</header>
+    
+    <main>
+        <div class="main-title">
+        <h2>Notre sélection d’outils qui vont à l’essentiel</h2>
+        <h3>Pour un travail à distance <strong>efficace</strong></h3>
+    </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <h2 class="netiquette_h2">Discord</h2><br>
+                    <a href="https://youtu.be/3zOrtjejA3U" target="blanck">
+                        <img 
+                            class="netiquette_img" 
+                            src="../ressources/outils/discord.png"
+                            alt="vidéo vérifications techniques" 
+                        >
+                    </a>
+                    <p class="netiquette_paragraphe">Discord est un outil tout en un qui recouvre plusieurs types de communications à distance : messagerie instantanée, discussions vocales en groupe et visio-conférences. Bien connus dans les mondes du jeu vidéo et du développement informatique, ses possibilités ne se limitent pas à ses domaines. Ce logiciel mériterait largement d’être utilisé par un plus large public. Alternative possible : Slack qui plus conçu pour les entreprises.</p>
+                </div>
+            
+                <div class="carousel-item">
+                    <h2 class="netiquette_h2">Google Meet</h2><br>
+                    <a href="https://youtu.be/0rD6XpUlVts" target="blanck">
+                        <img 
+                            class="netiquette_img" 
+                            src="../ressources/outils/meet.png"
+                            alt="vidéo attitude et comportement" 
+                        >
+                    </a>
+                    <p class="netiquette_paragraphe">Cet outil de visioconférence, connu sous le nom de Meet, s’est imposé comme une référence dans le domaine. Loin d’être le seul service de ce type sur le marché, nous l’avons sélectionné pour sa grande facilité d’utilisation et parce qu’il peut être utilisé gratuitement. Les alternatives grand public possibles : Zoom et Skype.
+                    </p>
+                </div>
+
+                <div class="carousel-item">
+                    <h2 class="netiquette_h2">WhatsApp</h2><br>
+                    <a href="https://youtu.be/GLQk7Q8DU0w" target="blanck">    
+                        <img 
+                            class="netiquette_img" 
+                            src="../ressources/outils/whatsapp.png"
+                            alt="vidéo participation" 
+                        >
+                    </a>
+                    <p class="netiquette_paragraphe">Le numéro 1 de la messagerie instantanée sur téléphone mobile. Une bonne solution pour échanger avec un petit groupe de personnes à distance, gratuitement. La création d’un groupe se fait en quelques minutes, via les numéros de téléphones portables des participants. Il existe désormais une application pour ordinateurs Windows et Mac. Alternatives possibles : Signal et Telegram.
+                    </p>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+        <div class="container">
+            <div class="card">
+              <div class="card-content">
+                <h4>Les maîtriser tu sauras</h4>
+                <div class="card-image-container">
+                  <div class="card-image" id="outils-logo"></div>
+                </div>
+                <div class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicidfsfsdng elit. Corrupti at asperiores natus.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container">
+            <div class="card">
+              <div class="card-content">
+                <h4>Fais le plein d'astuces</h4>
+                <div class="card-image-container">
+                  <div class="card-image" id="astuces-logo"></div>
+                </div>
+                <div class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis in labore voluptatem.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container">
+            <div class="card">
+              <div class="card-content">
+                <h4>Attention aux règles</h4>
+                <div class="card-image-container">
+                  <div class="card-image" id="netiquette-logo"></div>
+                </div>
+                <div class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam cupiditate eaque eaque.
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- FORMAT DESKTOP -->
+
+    <section>
+    <div id="netiquette-desktop">  
+
+        <div class="netiquette-card"> 
+            <div class="desktop-image" id="image_technique">
+            </div>
+            <div class="desktop-paragraphe"> 
+                <h2 class="netiquette_h2">Discord</h2><br>
+                <p>Discord est un outil tout en un qui recouvre plusieurs types de communications à distance : messagerie instannée, discussions vocales en groupe et visio-conférences. Bien connus dans les mondes du jeu vidéos et du développement informatique, ses possibilités ne se liment pas à ses domaines. Ce logiciel mériterait largement d’être utilisé par un plus large public. Alternative possible : Slack qui plus conçu pour les entreprises. </p>
+            </div>
+        </div>
+
+        <div class="netiquette-card"> 
+            <div class="desktop-paragraphe">
+                <h2 class="netiquette_h2">Google Meet</h2><br>
+                <p>Cet outil de visioconférence, connu sous le nom de Meet, s’est imposé comme une référence dans le domaine. Loin d’être le seul service de ce type sur le marché, nous l’avons sélectionné pour sa grande facilité d’utilisation et parce qu’il peut être utilisé gratuitement. Les alternatives grand public possibles : Zoom et Skype.
+                </p>
+            </div>                  
+            <div class="desktop-image" id="image_attitude">
+            </div>
+        </div>
+
+        <div class="netiquette-card"> 
+            <div class="desktop-image" id="image_participation"> 
+            </div>
+            <div class="desktop-paragraphe"> 
+                <h2 class="netiquette_h2">WhatsApp</h2><br>
+                <p>Le numéro 1 de la messagerie instantanée sur téléphone mobile. Une bonne solution pour échanger avec un petit groupe de personnes à distance, gratuitement. La création d’un groupe se fait en quelques minutes, via les numéros de téléphones portables des participants. Il existe désormais une application pour ordinateurs Windows et Mac. Alternatives possibles : Signal et Telegram.
+                </p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="logo-footer" onclick="location.href='./index.html'">
+            <img src="./ressources/logo.png" alt="Logo de JeRemote">
+            <h3>JeRemote</h3>
+        </div>
+        <div class="footer-bottom">
+        <div class="social-links">
+            <a href="#"><div class="social">
+                <i class="fab fa-facebook-f"></i>
+            </div></a>
+            <a href="#"><div class="social">
+                <i class="fab fa-discord"></i>
+            </div></a>
+            <a href="#"><div class="social" href="#">
+                <i class="fab fa-instagram"></i>
+            </div></a>
+        </div>
+
+        <div class="mentions">
+            <p>Bidouillé par la <strong>Team Hegémone</strong> © 2021 | <a href="#">Mentions légales</a></p>
+        </div>
+        </div>
+    </footer>
+
+</body>
+<script src="js/menu.js"></script>
+<script src="https://kit.fontawesome.com/0326ead9ee.js" crossorigin="anonymous"></script>
+</html>

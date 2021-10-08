@@ -1,14 +1,14 @@
 .header-bg{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-netiquette-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-outils-bg.png);
 }
 
 footer{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-netiquette-bg.png);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/mobile-outils-bg.png);
 }
 
 /* Suppression affichage version desktop, version mobile affichée par défaut */
 
-#netiquette-desktop{
+section{
     display:none;
 }
 
@@ -17,6 +17,10 @@ footer{
 
 body{
     background: #F1F1F1;
+}
+
+.carousel {
+    display: none;
 }
 
 .header-content-pages {
@@ -37,6 +41,73 @@ body{
 
 main{
     text-align: center;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px 0 20px;
+    z-index: -1;
+}
+
+.card{
+    max-width: 250px;
+    min-height: 350px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+h4 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.card-content{
+    padding: 30px 20px;
+}
+
+.card-image-container {
+    width: 150px;
+    height: 100px;
+    background: #F5F5F5;
+    margin: 30px auto 20px auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.card-image {
+    height: 80px;
+    width: 100px;
+}
+
+#outils-logo {
+    background: url(/ressources/index/outils-logo.png);
+    background-size: cover;
+}
+
+#astuces-logo {
+    background: url(/ressources/index/astuces-logo.png);
+    background-size: cover;
+    padding: 10px 0;
+}
+
+#netiquette-logo {
+    background: url(/ressources/index/netiquette-logo.png);
+    background-size: cover;
+    padding: 10px 0;
+}
+
+.card-text {
+    max-width: 200px;
+    height: 120px;
+    margin: 0 auto 20px auto;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 h2 {
@@ -70,7 +141,7 @@ h3 {
 }
 
 .netiquette_h2 {
-    color:#FF3366;
+    color:#1b1b1b;
     text-align:center;
     font-size: 1.5em;
     padding: 30px 0;
@@ -81,26 +152,16 @@ h3 {
     padding: 0 3em;
     width: 100%;
     max-height: auto;
-    border: 2px solid black;
 }
 
-.netiquette_caption {
-    text-align:center;
-    color: #202020;
-    font-size: 0.7em;
-    padding-top: 0.5em;
-    color:crimson;
-}
 .netiquette_paragraphe {
     text-align: justify;
     padding: 0 3em;
 }
+
 .carousel-control-prev-icon, .carousel-control-next-icon  {
     background-color: #FF3366;
 }
-
-
-/* ********************* MEDIA QUERIES *************************/
 
 @media screen and (min-width: 530px){
 
@@ -108,12 +169,16 @@ h3 {
         display:none;
     }
 
-    .header-bg{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/netiquette-bg.png);
+    .container{
+        display: none;
     }
-    
+
+    .header-bg{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/outils-bg.png);
+    }
+
     footer{
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/netiquette-bg.png);
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 100%), url(/ressources/bg/outils-bg.png);
     }
 
     .header-content-pages {
@@ -132,10 +197,10 @@ h3 {
     main {
     position:relative;
     width: auto;
-    min-height: 1450px;
+    min-height: 1100px;
     text-align: center;
     background: #F1F1F1;
-}
+    }
 
     section {
         display: flex;
@@ -161,16 +226,17 @@ h3 {
         padding: 20px;
         border: 0.3em solid white;
         border-radius: 1em;
-        background-color:white;
+        background-color: white;
         width: 1000px;
         max-height: 300px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
 
     .netiquette_h2 {
-        color:#FF3366;
+        color:#161616;
         text-align:center;
         font-size: 1.5em;
+        font-weight: bold;
         padding: 0;
     }
 
@@ -185,34 +251,28 @@ h3 {
     .desktop-image{
         width: 45%;
         border-radius: 1em;
+        background-color: #F5F5F5;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
+
     #netiquette_img {
         border-radius:1em;
         width: 100%;
     }
 
     #image_technique{
-        background-image: url("ressources/controle_technique.jpg");
-        background-size:cover;
+        background-image: url("../ressources/outils/discord.png");
         background-repeat: no-repeat;
         background-position:center;
     }
+    
     #image_attitude{
-        background-image: url("ressources/attitude_comportement.jpg");
-        background-size: cover;
+        background-image: url("../ressources/outils/meet.png");
         background-repeat: no-repeat;
         background-position:center;
     }
     #image_participation{
-        background-image: url("ressources/participation.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position:center;
-    }
-    #image_perfectionnement{
-        background-image: url("ressources/perfectionnement.jpg");
-        background-size: cover;
+        background-image: url("../ressources/outils/whatsapp.png");
         background-repeat: no-repeat;
         background-position:center;
     }
